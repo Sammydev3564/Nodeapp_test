@@ -41,4 +41,3 @@ pipeline {
   }
 
 }
-Footer
