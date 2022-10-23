@@ -2,6 +2,8 @@ pipeline {
 
   environment {
     dockerimagename = "sammydev3564/nodeapp_test"
+    registryCredential = 'dockerhub'
+
     dockerImage = ""
   }
 
