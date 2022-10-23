@@ -2,8 +2,6 @@ pipeline {
 
   environment {
     dockerimagename = "sammydev3564/nodeapp_test"
-    registryCredential = 'dockerhub'
-
     dockerImage = ""
   }
 
@@ -27,7 +25,7 @@ pipeline {
 
     stage('Pushing Image') {
       environment {
-               registryCredential = 'dockerhub'
+               registryCredential = 'dockerhublogin'
            }
       steps{
         script {
