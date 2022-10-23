@@ -35,6 +35,12 @@ pipeline {
         }
       }
     }
+    stage('slack notification') {
+      steps{
+        slackSend color: 'good', message: 'success message'
+
+      }
+    }
 
     
 
